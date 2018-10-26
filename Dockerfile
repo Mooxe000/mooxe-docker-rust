@@ -16,3 +16,5 @@ RUN \
     echo "source $HOME/.cargo/env" >> ~/.bashrc && \
     echo "source $HOME/.cargo/env" >> ~/.zshrc && \
     echo "source $HOME/.cargo/env" >> ~/.config/fish/config.fish
+
+ADD ./mirror.config /root/.cargo/config
