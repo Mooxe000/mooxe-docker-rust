@@ -18,3 +18,6 @@ RUN \
     echo "source $HOME/.cargo/env" >> ~/.config/fish/config.fish
 
 ADD ./mirror.config /root/.cargo/config
+
+RUN apt-get install -y libssh-dev pkg-config cmake
+RUN bash -lc "cargo install --force cargo-edit cargo-edit-locally"
