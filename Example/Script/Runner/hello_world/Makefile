@@ -1,2 +1,0 @@
-all:
-	runner main.rs
