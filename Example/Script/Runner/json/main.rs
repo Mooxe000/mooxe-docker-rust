@@ -1,6 +1,6 @@
 #!/usr/bin/env runner
 
-extern crate json;
+use json;
 
 let parsed = json::parse(r#"
 
