@@ -1,14 +1,14 @@
 build:
-	docker build -t mooxe/rust .
+	buildah bud -t mooxe/rust .
 
 rebuild:
-	docker build --no-cache -t mooxe/rust .
+	buildah bud --no-cache -t mooxe/rust .
 
 in:
-	docker run --rm -ti \
+	podman run --rm -ti \
 		--name=rust \
 		-v $$(pwd):/root/rust \
 			mooxe/rust /bin/bash
 
 push:
-	docker push mooxe/rust
+	podman push mooxe/rust
