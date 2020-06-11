@@ -1,4 +1,4 @@
-use crate::math_mod::syntax_kind::SyntaxKind::{
+use super::syntax_kind::SyntaxKind::{
   ROOT
 }
 ;

@@ -7,20 +7,20 @@ use rowan::{
 use std::iter::Peekable
 ;
 
-use crate::math_mod::syntax_kind::SyntaxKind::*
+use super::syntax_kind::SyntaxKind::*
 ;
 
-type SyntaxKind = crate::math_mod::syntax_kind::SyntaxKind
+type SyntaxKind = super::syntax_kind::SyntaxKind
 ;
-type Lang = crate::math_mod::lang::Lang
+type Lang = super::lang::Lang
 ;
 
 type SyntaxNode = rowan::SyntaxNode<Lang>
 ;
-#[allow(unused)]
+// #[allow(unused)]
 type SyntaxToken = rowan::SyntaxToken<Lang>
 ;
-#[allow(unused)]
+// #[allow(unused)]
 pub type SyntaxElement = rowan::NodeOrToken<
   SyntaxNode
 , SyntaxToken
