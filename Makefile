@@ -1,5 +1,5 @@
 build:
-	buildah bud -t mooxe/rust .
+	buildah bud --layers -t mooxe/rust .
 
 rebuild:
 	buildah bud --no-cache -t mooxe/rust .
